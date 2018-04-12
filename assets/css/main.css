@@ -95,7 +95,6 @@ header ul {
 
 header li{
     font-size: 25px;
-    color: #2658F9;
 }
 
 .brandname{
@@ -106,6 +105,10 @@ header li{
     display: flex;
     justify-content: space-around;
     flex: 1;
+}
+
+.header__RightNav a{
+    color: #2658F9;
 }
 @media only screen and (max-width: 600px) {
     header__RightNav {
