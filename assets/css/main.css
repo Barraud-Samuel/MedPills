@@ -66,7 +66,8 @@ div{
 /*header*/
 
 body{
-    height: 3000px;
+    margin: 0;
+    padding: 43px 0;    
 }
 
 .mainContainer{
@@ -270,7 +271,7 @@ h2{
   /*Concept*/
 
 #atout{
-    margin: 300px 0 0 0;
+    margin: 260px 0 0 0;
 }  
 
 .atout__exempleContainer{
