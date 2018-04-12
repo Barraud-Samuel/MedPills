@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>MedPills</title>
-    <link rel="stylesheet" href="./assets/css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-    <header>le header</header>
-    <main>Le main</main>
-    <footer>Le footer</footer>
+    <div class="mainContainer">
+        <header>
+            <nav>
+                <ul>
+                    <li class="brandname">Logo</li>
+                    <div class="header__RightNav">
+                        <li><a class="js-scrollTo" href="#concept">Concept</a></li>
+                        <li><a class="js-scrollTo" href="">Atouts</a></li>
+                        <li><a class="js-scrollTo" href="">Questions/Réponses</a></li>
+                        <li><a class="js-scrollTo" href="">Avis</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="presentation">
+                <div class="inner">
+                    <div class="sloganContainer">
+                        <p class="sloganContainer__title">Med pills</p>
+                        <h1>innover<br>pour une meilleure santé</h1>
+                        <p class="sloganContainer__desc">Notre but est de connecter votre état de sansté à la recherche et l'assistant personnalisé.</p>
+                    </div><!--
+                    --><div class="pills">
+                        <img data-enllax-ratio="0.6" data-enllax-type="foreground" src="./assets/images/pill.png" alt="">
+                    </div>
+                </div>
+                <div class="scrollDown">
+                    <a class="js-scrollTo" href="#concept">
+                        <img src="./assets/images/back.png" alt="">                            
+                        <p>Scroll down</p>
+                    </a>
+                </div>
+            </div>
+            <div id="concept">
+                <p>concept</p>
+            </div>
+        </main>
+        <footer>Le footer</footer>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/libs/jquery.enllax.min.js"></script>
+<script type="text/javascript" src="./assets/js/main.js"></script>   
 </body>
 </html>
