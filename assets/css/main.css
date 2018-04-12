@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, , h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -52,9 +52,13 @@ img{
     display: block
 }
 
-a ,p, h1{
+a ,p, h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
     color: #202020;
+}
+
+div{
+    box-sizing: border-box
 }
 
 /*CONTENT GOES HERE*/
@@ -91,6 +95,7 @@ header ul {
 
 header li{
     font-size: 25px;
+    color: #2658F9;
 }
 
 .brandname{
@@ -130,8 +135,8 @@ main .inner{
     -ms-transform: rotate(-90deg); /* IE 9 */
     -webkit-transform: rotate(-90deg); /* Safari 3-8 */
     transform: rotate(-90deg);
-    -webkit-animation: scrollDown 2s infinite ; /* Safari 4.0 - 8.0 */
-    animation: scrollDown 2s infinite;
+    -webkit-animation: scrollDown 2s infinite ease-in-out; /* Safari 4.0 - 8.0 */
+    animation: scrollDown 2s infinite ease-in-out;
 }
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes scrollDown {
@@ -193,4 +198,103 @@ main .inner{
     display: inline-block;
     width: 30%;
     vertical-align: top;
+}
+
+ /*Concept*/
+
+ #concept{
+     margin: 200px 0 0 0;
+     position: relative;
+ }
+ #concept::before{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 374px;
+    width: 158px;
+    background: url(../images/concept1.png)no-repeat center center;
+    top: 0;
+    left: 0;
+ }
+ #concept::after{
+    display: block;
+    content: "";
+    position: absolute;
+    height: 1192px;
+    width: 389px;
+    background: url(../images/concept2.png)no-repeat center center;
+    top: 400px;
+    right: 0px;
+    z-index: -1;
+ }
+
+h2{
+     font-size: 64px;
+     text-align: center;
+     color: #2658F9;
+ }
+
+ .concept__humanBody{
+     margin: 100px 0 0 0;
+     display: inline-block;
+     width: 40%;
+     vertical-align: top;
+ }
+ 
+ .concept__desc{
+     margin: 100px  0 0 0;
+     display: inline-block;
+     width: 60%;
+     vertical-align: top;
+     padding: 130px 0 0 80px;
+     font-size: 30px;
+     line-height: 40px
+ }
+
+ .concept__mockup{
+     position: absolute;
+     right: 20px;
+     top: 600px;
+ }
+
+ .concept__desc2{
+     margin: 320px 0 0 0;
+     max-width: 570px;
+     font-size: 30px;
+     line-height: 40px;
+ }
+
+  /*Concept*/
+
+#atout{
+    margin: 300px 0 0 0;
+}  
+
+.atout__exempleContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.atout__exemple{
+    max-width: 360px;
+    margin: 80px 0 0 0;
+}
+
+.atout__exemple img{
+    max-width: 188px;
+    margin: 0 auto;
+}
+
+.atout__exemple h3{
+    text-align: center;
+    font-size: 40px;
+    color: #2658F9;
+    margin: 0;
+}
+
+.atout__exemple p{
+    text-align: center;
+    font-size: 25px;
+
 }
