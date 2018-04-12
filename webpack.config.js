@@ -16,7 +16,6 @@ var cssConfig = isProd ? cssProd : cssDev;
 module.exports = {
   entry: {
     'index': './src/js/index.js',
-    'page2': './src/js/page2.js'
   },
   devtool: isProd ? '' : 'eval-source-map',
   output: {
@@ -70,12 +69,6 @@ module.exports = {
       title: 'Index',
       template: './src/pages/index.pug',
       chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      title: 'Page 2',
-      template: './src/pages/page2.pug',
-      filename: 'page2.html',
-      chunks: ['page2']
     }),
     new ExtractTextPlugin({
       filename: 'styles.css',
