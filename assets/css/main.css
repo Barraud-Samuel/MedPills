@@ -236,6 +236,11 @@ h2{
      text-align: center;
      color: #2658F9;
  }
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+}
 
  .concept__humanBody{
      margin: 100px 0 0 0;
@@ -253,7 +258,12 @@ h2{
      font-size: 30px;
      line-height: 40px
  }
-
+@media only screen and (max-width: 600px) {
+    .concept__desc {
+        display: block;
+        width: 100%;
+    }
+}
  .concept__mockup{
      position: absolute;
      right: 20px;
