@@ -18,6 +18,10 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+@font-face {
+    font-family: Avenir;
+    src: url(../fonts/Avenir.ttc);
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -70,10 +74,6 @@ div{
     box-sizing: border-box
 }
 
-@font-face {
-font-family: Avenir;
-    src: url(../fonts/Avenir.ttc);
-}
 
 /*CONTENT GOES HERE*/
 
@@ -334,6 +334,7 @@ h2{
      font-size: 60px;
      text-align: center;
      color: #2658F9;
+    font-weight: 700;
  }
 @media only screen and (max-width: 600px) {
     h2 {
@@ -350,7 +351,7 @@ h2{
  }
 @media only screen and (max-width: 1070px) {
     .concept__humanBody {
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -528,7 +529,7 @@ h2{
 }
 
 .atout__exemple img{
-    max-width: 152px;
+    max-width: 107px;
     margin: 0 auto;
 }
 
@@ -655,6 +656,7 @@ h2{
     margin:  0 auto;
     width: auto;
     margin-top: 60px;
+    filter: grayscale(100%);
 }
 
 .doc__name{
