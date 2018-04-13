@@ -67,7 +67,6 @@ div{
 
 body{
     margin: 0;
-    padding: 43px 0;    
 }
 
 .mainContainer{
@@ -300,5 +299,60 @@ h2{
 .atout__exemple p{
     text-align: center;
     font-size: 25px;
+}
 
+#qna{
+    margin: 400px 0 0 0;
+}
+
+.question__container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.question__collumn{
+    display: flex;
+    flex-direction: column;
+}
+
+.question__element{
+    max-width: 400px;
+    margin: 30px 0 0 0;
+}
+
+.question__title{
+    background: #2658F9;
+    padding: 70px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.question__title p {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.question__response{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: solid 1px #C5C3C3;
+    border-left: solid 1px #C5C3C3;
+    border-right: solid 1px #C5C3C3;
+    padding: 70px 10px;
+}
+
+.question__response p {
+    text-align: center;
+}
+
+.margintop{
+    margin-top: 124px;
+}
+@media only screen and (max-width: 1324px) {
+    .margintop {
+        margin-top: 0;
+    }
 }
