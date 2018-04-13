@@ -1,5 +1,3 @@
-$(window).enllax();
-AOS.init();
 
 $(document).ready(function() {
     $('.js-scrollTo').on('click', function() { // Au clic sur un élément
@@ -8,4 +6,7 @@ $(document).ready(function() {
         $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
         return false;
     });
+    $(window).enllax();
+    AOS.init();
+
 });
